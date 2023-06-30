@@ -1,0 +1,11 @@
+.app__home {
+    position: relative ;
+    margin: 0 0 8rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .app__home {
+        margin: 0 0;
+    }
+}

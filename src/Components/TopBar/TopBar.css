@@ -1,0 +1,99 @@
+.topbar {
+  width: 100%;
+  height: 80px;
+  background-color: var(--Primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.topbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+.topbar-left {
+  flex: 2;
+}
+
+.topbar-left i {
+  color: var(--White-color);
+  font-size: 22px;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.btn {
+  margin: 0 1rem 0 0;
+  background-color: var(--Primary-color);
+  color: var(--White-color);
+  border: 1px solid var(--White-color);
+  padding: 10px 18px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.topbar-btn {
+  position: relative;
+}
+
+.topbar-dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: var(--White-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 0.3rem 0 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.topbar-link {
+  margin: 0.5rem 0;
+  color: var(--Primary-color);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0 2px 0 10px;
+  text-decoration: none;
+}
+
+
+/* 
+==========================================
+            RESPONSIVE MODE
+==========================================
+ */
+
+
+@media screen and (max-width: 789px) {
+  .topbar {
+    height: 70px;
+  }
+  .topbar-container {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .topbar-left {
+    display: none;
+  }
+  .topbar-right {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn {
+    margin: 0 auto;
+    padding: 6px 15px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}

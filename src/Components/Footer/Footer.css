@@ -1,0 +1,87 @@
+.app__footer {
+  background-color: var(--Primary-color);
+  margin: 0;
+  width: 100%;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 1rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer-content {
+  margin: 4rem 0 0;
+}
+
+.footer-title {
+  color: var(--White-color);
+  margin: 0 0 1.5rem;
+  font-size: 20px;
+}
+
+.footer-text {
+  margin: 0.5rem 0 1.2rem;
+}
+
+.footer-text p {
+  margin: 0 0 0.6rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--White-color);
+}
+
+
+
+
+.footer-copy-right {
+  text-align: center;
+  margin: 2rem 0 0;
+  padding-bottom: 1.5rem;
+  color: var(--White-color);
+}
+
+.footer-copy-right-content {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-copy-right-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+
+/* 
+====================================================
+                   RESPONSIVE MODE
+====================================================
+ */
+
+
+ @media screen and (max-width: 768px) {
+ 
+  .footer-container {
+     width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-text p {
+    font-size: 14px;
+  }
+
+  .footer-copy-right-content {
+    margin-bottom: 0.9rem;
+    font-size: 18px;
+  }
+  
+  .footer-copy-right-text {
+    font-size: 14px;
+  }
+  
+ }

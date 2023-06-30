@@ -1,0 +1,45 @@
+.brands {
+    width: 80%;
+    margin: 2rem 0 1rem;
+    background-color: var(--White-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem 1.2rem ;
+    border-radius: 10px;
+}
+
+.brand-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+}
+
+.brand-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.brand-link {
+    text-decoration: none;
+    margin: 0.3rem 0 ;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--Primary-color);
+}
+
+
+
+
+
+/* 
+========================================================
+                    RESPONSIVE MODE
+========================================================
+ */
+
+ @media screen and (max-width: 769px) {
+    .brands {
+      display: none;
+    }
+  }

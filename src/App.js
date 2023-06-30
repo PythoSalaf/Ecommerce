@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route } from "./Config";
+import { useSelector } from "react-redux";
 
 function App() {
+  const cart =  useSelector(state =>  state.cart.cart)
+  const totalPrice =  useSelector(state =>  state.cart.totalPrice)
+  const totalAmount =  useSelector(state =>  state.cart.totalAmount)
+  console.log("cart", cart);
+  console.log("totalprice", totalPrice);
+  console.log("totalAmount", totalAmount);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Route />
+    </>
   );
 }
 

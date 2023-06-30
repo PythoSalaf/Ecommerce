@@ -1,0 +1,132 @@
+.product-page {
+  margin: 1rem 0 0;
+}
+
+.popular-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.more-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 4rem 0 2rem;
+  text-transform: uppercase;
+}
+
+.popular-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 20px 5px;
+}
+
+.more-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 20px 5px;
+}
+
+.show-more-btn {
+  width: 20%;
+  margin: 2.5rem 0 2rem 2rem;
+  padding: 1.2rem 2rem;
+  border-radius: 5px;
+  background-color: var(--Primary-color);
+  color: var(--White-color);
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-transform: capitalize;
+}
+
+/* 
+======================================================
+                 RESPONSIVE MODE
+======================================================
+ */
+
+ @media screen and (max-width: 1451px) {
+  .popular-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .more-products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .show-more-btn {
+    width: 40%;
+    margin: 2.5rem auto 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 22px;
+  }
+ }
+
+
+@media screen and (max-width: 769px) {
+  .popular-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .more-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .show-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2.5rem auto 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 20px;
+  }
+  .popular-title {
+    font-size: 23px;
+    margin: 1rem 0 1.5rem;
+    text-align: center;
+  }
+  
+  .more-title {
+    font-size: 23px;
+    margin: 4rem 0 2.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .popular-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .more-products {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .show-more-btn {
+    width: 80%;
+    margin: 2.5rem auto 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .popular-title {
+    font-size: 20px;
+    margin: 1rem 0 2rem;
+  }
+  
+  .more-title {
+    font-size: 20px;
+    margin: 4rem 0 3rem;
+  }
+}

@@ -1,0 +1,109 @@
+.home__advert {
+  width: 100%;
+  margin: 2rem 0 0;
+}
+
+.home__advert-container {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home__advert-data-container {
+  width: 100%;
+  background-color: rgb(93, 117, 248);
+  margin: 0 1rem;
+  padding: 2rem 1rem;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.advert-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advert-content {
+  flex: 2;
+  color: var(--White-color);
+  position: relative;
+}
+.advert-content p {
+  font-size: 19px;
+  margin: 0 0 1.5rem;
+}
+.advert-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content-link {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--Primary-color);
+  border: 1px solid rgb(93, 117, 248);
+  padding: 10px 20px;
+  background-color: var(--White-color);
+  border-radius: 5px;
+}
+
+.advert-img-container {
+  flex: 1;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  /* transition: scale ; */
+}
+.advert-img {
+  width: 90%;
+  height: 80%;
+  transition: all 0.9s ease-in-out;
+}
+
+
+.advert-img:hover {
+  transform: scale3d(1.4,1.2,1);
+}
+
+
+
+/* 
+=======================================
+        RESPONSIVE MODE
+========================================
+ */
+
+ @media screen and (max-width: 789px) {
+    .home__advert-container {
+      flex-direction: column;
+      margin: 0 auto;
+      }
+      .home__advert-data-container {
+        margin: 0.8rem 0;
+      }
+      .advert-content p {
+        font-size: 16px;
+        margin: 0 0 1.5rem;
+      }
+      .advert-content h3 {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      
+      .advert-img {
+        width: 80%;
+        height: 80%;
+        
+      }
+
+ }

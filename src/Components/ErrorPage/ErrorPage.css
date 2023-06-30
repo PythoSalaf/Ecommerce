@@ -1,0 +1,177 @@
+.error-page {
+    width: 90%;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.error-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 3rem 0 0;
+}
+
+.error-avatar {
+    background-color: #f5f4f9;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+}
+
+.error-avatar img {
+    width: 40%;
+    height: 40%;
+}
+
+.error-content {
+    margin: 0 0 0 -3rem;
+}
+
+.error-title {
+    font-size: 6rem;
+    line-height: 50px;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--Primary-color);
+}
+
+.error-texts {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin: 0 0 1rem;
+    color: var(--Primary-color);
+}
+
+.error-text {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--Primary-color);
+    margin: 0 0 2rem;
+}
+
+.error-btn {
+    padding: 14px 22px;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--White-color);
+    background-color: var(--Primary-color);
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* 
+===================================================================
+                            RESPONSIVE MODE
+===================================================================
+ */
+
+@media screen and (max-width:1017px) {
+    .error-avatar {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .error-avatar img {
+        width: 35%;
+        height: 35%;
+    }
+    
+    .error-content {
+        margin: 0 0 0 -3rem;
+    }
+    
+    .error-title {
+        font-size: 5rem;
+        line-height: 40px;
+    }
+    
+    .error-texts {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    
+    .error-text {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    
+    .error-btn {
+        padding: 14px 22px;
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+ @media screen and (max-width: 769px) {
+    .error-page {
+        height: fit-content;
+    }
+
+    .error-container {
+        width: 100%;
+        display: flex;
+       flex-direction: column;
+    }
+    
+    .error-avatar {
+        width: 200px;
+        height: 200px;
+       
+    }
+    
+    .error-content {
+        margin: 3rem 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .error-title {
+        font-size: 4.5rem;
+        line-height: 30px;
+        margin-bottom: 2rem;
+        
+    }
+    
+    .error-texts {
+        font-size: 25px;
+        margin: 0 0 1rem;
+    }
+    
+    .error-text {
+        font-size: 20px;
+        margin: 0 0 1.4rem;
+    }
+    
+    .error-btn {
+        padding: 14px 22px;
+        font-size: 18px;
+        margin-top: 1rem;
+       
+    }
+    
+ }
+
+

@@ -1,0 +1,51 @@
+.product-layout-page {
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+  }
+
+  .product-layout-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 97%;
+    
+  }
+  
+  .product-layout-side-bar {
+    width: 25%;
+  }
+  .product-layout-content {
+    width: 74%;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  /* 
+=======================================
+          RESPONSIVE MODE
+=======================================
+ */
+
+@media screen and (max-width: 875px) {
+  .product-layout-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .product-layout-side-bar {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .product-layout-content {
+    width: 100%;
+  }
+}

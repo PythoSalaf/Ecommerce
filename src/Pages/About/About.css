@@ -1,0 +1,69 @@
+.about-page {
+  width: 100%;
+  position: relative;
+}
+
+.about-top {
+  width: 100%;
+  position: relative;
+  height: 40vh;
+}
+
+.about-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-content {
+  position: absolute;
+  top: 20%;
+  left: 20px;
+}
+
+.top-content-title {
+  font-size: 33px;
+  font-weight: 700;
+  color: var(--Primary-color);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.top-content-text {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--Primary-color);
+}
+
+.about-bottom {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.about-bottom-title {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.about-bottom-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  margin-top: 6px;
+}
+
+.about-bottom-text {
+    margin: 1rem 0 1.6rem;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.span-text {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: 500;
+}

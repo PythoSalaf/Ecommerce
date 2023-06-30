@@ -1,0 +1,73 @@
+.app__feature {
+  margin: 3rem 0;
+  overflow-x: hidden;
+}
+
+.feature-container {
+  width: 50px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 3rem;
+}
+
+.feature-title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--Primary-color);
+}
+
+.feature-text {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 15px 0 0;
+  text-align: center;
+  color: var(--Primary-color);
+}
+
+
+.slick-slide > div {
+  margin: 0 35px !important;
+}
+
+.slick-list {
+  margin: 0 10px !important;
+}
+
+
+
+
+/*
+==============================================
+                RESPONSIVE MODE
+==============================================
+ */
+
+@media screen and (max-width: 768px) {
+  .feature-title {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .feature-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0 0;
+    text-align: center;
+  }
+
+  .slick-slide > div {
+    margin: 10px 16px !important;
+  }
+  
+  .slick-list {
+    margin: 0 2px !important;
+  }
+
+}

@@ -1,0 +1,55 @@
+.navbar {
+  background-color: var(--Primary-color);
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  margin: 2px auto 0;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--White-color);
+  font-size: 20px;
+}
+
+.nav-contact {
+  display: flex;
+  align-items: center;
+  color: var(--White-color);
+  /* margin-right: 1.8rem; */
+}
+
+.nav-text {
+  font-size: 20px;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.nav-number {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+/* 
+============================================
+               RESPONSIVE MODE
+============================================
+ */
+
+@media screen and (max-width: 789px) {
+  .navbar {
+    display: none;
+  }
+}

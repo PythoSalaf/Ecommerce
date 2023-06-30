@@ -1,0 +1,55 @@
+.app__native {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 2rem 0 0;
+    background-color: var(--Primary-color);
+}
+
+.native-data-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.native__data-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.native-content-title {
+    font-size: 20px;
+    margin: 0 0 0.5rem;
+}
+
+.content-descibe {
+    font-size: 16px;
+}
+
+/*
+============================================
+              RESPONSIVE MODE
+============================================= 
+ */
+
+@media screen and (max-width: 768px) {
+    .native-data-list {
+        justify-content: start;
+        /* margin: 0 0 0 10px; */
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        
+    }
+
+    .native__data-container  {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        width: 100%;
+    }
+}

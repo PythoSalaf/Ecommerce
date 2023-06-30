@@ -1,0 +1,120 @@
+.empty-cart {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    height: 65vh;
+}
+
+.empty-cart-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-cart-top img {
+   width: 50%;
+}
+
+.empty-cart-bottom {
+    width: 100%;
+    margin: 2rem auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.empty-cart-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.empty-cart-title span {
+    color: red;
+}
+
+.empty-cart-text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 35px;
+    /* text-transform: capitalize; */
+    margin: 1rem 0 2rem;
+}
+
+.empty-cart-btn {
+    font-size: 22px;
+    font-weight: 500;
+    background-color: var(--Primary-color);
+    color: var(--White-color);
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.empty-cart-btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--Primary-color);
+    color: var(--Primary-color);
+}
+
+
+
+/* 
+=========================================================
+               RESPONSIVE MODE
+=========================================================
+ */
+
+ @media screen and (max-width:769px) {
+    .empty-cart {
+        width: 95%;
+        height: fit-content;
+    }
+    
+    .empty-cart-top img {
+       width: 40%;
+    }
+    
+    .empty-cart-bottom {
+        margin: 2rem 0 1rem;
+    }
+    
+    .empty-cart-title {
+        font-size: 25px;
+        font-weight: 600;
+        
+    }
+    
+    .empty-cart-text {
+        font-size: 18px;
+        margin: 0.8rem 0 1.3rem;
+        line-height: 30px;
+    }
+    
+    .empty-cart-btn {
+        font-size: 18px;
+        padding: 10px 15px;
+       
+    }
+    
+    .empty-cart-btn:hover {
+       display: none;
+    }
+ }
+
+ @media screen and (max-width: 421px) {
+    .empty-cart-text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+ }

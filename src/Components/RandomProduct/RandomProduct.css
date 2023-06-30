@@ -1,0 +1,44 @@
+.random-container {
+  width: 80%;
+  margin: 2rem 0 1rem;
+  background-color: var(--White-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+}
+
+.random-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.random-item {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 0;
+  justify-content: space-evenly;
+}
+
+.random-avatar {
+  width: 150px;
+  height: 200px;
+}
+
+.random-name {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* 
+===================================================
+              RESPONSIVE MODE
+===================================================
+ */
+
+@media screen and (max-width: 769px) {
+  .random-container {
+    display: none;
+  }
+}

@@ -1,0 +1,113 @@
+.hero {
+  background: linear-gradient(rgb(9, 9, 9, 0.85), rgb(9, 9, 9, 0.85)),
+    url("../../Assets/herobg.png");
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--White-color);
+}
+
+
+.hero-content h1 {
+  font-size: 45px;
+  line-height: 70px;
+  margin: 0 0 3rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.hero-btn-container {
+  margin: 7rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.hero-btn-show {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 1.5rem 2.5rem;
+  background-color: transparent;
+  border: 1px solid var(--White-color);
+  color: var(--White-color);
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+}
+
+
+.hero-btn-learn {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+/* 
+==================================================================
+                  RESPONSIVE MODE
+==================================================================
+ */
+
+@media screen and (max-width: 769px) {
+  .hero {
+    justify-content: flex-start;
+    height: 60vh;
+  }
+  
+  .hero-content {
+    margin: 1rem 0 0;
+  }
+
+  .hero-content h1 {
+    font-size: 25px;
+    line-height: 40px;
+    margin: 0 0 3rem;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .hero-btn-container {
+    margin: 4rem 1rem 0;
+    gap: 20px;
+  }
+  
+  .hero-btn-show {
+    font-size: 18px;
+    padding: 0.9rem 1.3rem;
+  }
+  
+  
+  .hero-btn-learn {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0.9rem 1.3rem;
+  }
+}

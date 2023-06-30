@@ -1,0 +1,382 @@
+.product-detail-page {
+  width: 100%;
+  margin: 0 0;
+  padding: 2rem 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.product-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.product-detail-avatar {
+  width: 46%;
+  border: 2px solid var(--Primary-color);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background-color: #e0dfdf;
+}
+.detail-avatar {
+  width: 400px;
+}
+
+.product-detail-content {
+  width: 50%;
+}
+
+.detail-name {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--Primary-color);
+}
+
+.detail-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--Primary-color);
+  margin: 0.5rem 0;
+}
+
+.detail-describe {
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+  margin: 0.3rem 0 0.5rem;
+}
+
+.detail-review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail-review span {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--Primary-color);
+  text-transform: capitalize;
+}
+
+.detail-contents {
+  margin: 3rem 0 0;
+}
+
+.detail-brand {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.detail-battery {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.detail-display {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.detail-storage {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.detail-delivery {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.detail-camera {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.detail-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0 0;
+}
+
+.cart-btn {
+    width: 100%;
+    background-color: var(--Primary-color);
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 0.7rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--White-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-btn:hover {
+    background-color: inherit;
+    color: var(--Primary-color);
+}
+
+
+.now-btn {
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 0.7rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--Primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.now-btn:hover {
+    background-color: var(--Primary-color);
+    color: var(--White-color);
+}
+
+
+.section {
+    width: 90%;
+    margin: 2rem auto 1rem ;
+}
+
+.discription {
+    margin: 1rem 0 2rem ;
+}
+
+.discription h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 0.6rem;
+    color: var(--Primary-color);
+}
+
+.discription p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--Primary-color);
+}
+
+.features h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 0.6rem;
+    color: var(--Primary-color);
+}
+
+
+.features li {
+    margin: 0 0 0.4rem 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Primary-color);
+}
+
+.reviews h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 2rem 0 0.8rem;
+    color: var(--Primary-color);
+}
+
+.reviews p {
+    margin: 0 0 0.4rem 1.2rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Primary-color);
+}
+
+
+/* 
+==========================================
+          RESPONSIVE MODE
+===========================================
+ */
+
+@media screen and (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .product-detail-avatar {
+    width: 80%;
+    margin: 1rem 0;
+  }
+
+  .detail-avatar {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .product-detail-content {
+    width: 95%;
+  }
+
+
+
+  .detail-name {
+    font-size: 20px;
+    
+  }
+  
+  .detail-price {
+    font-size: 20px;
+   
+  }
+  
+  .detail-describe {
+    font-size: 18px;
+   
+  }
+  
+  /* .detail-review {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  } */
+  
+  .detail-review span {
+    font-size: 18px;
+  }
+  
+  /* .detail-contents {
+    margin: 3rem 0 0;
+  } */
+  
+  .detail-brand {
+    font-size: 18px;
+  }
+  .detail-battery {
+    font-size: 18px;
+  }
+  
+  .detail-display {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  .detail-storage {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  .detail-delivery {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+  
+  .detail-camera {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  
+  .detail-btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 2rem 0 0;
+  }
+  
+  .cart-btn {
+      font-size: 16px;
+      
+      
+  }
+  
+  .cart-btn:hover {
+     display: none;
+  }
+  
+  
+  .now-btn {
+      font-size: 16px;
+      border: none;
+  }
+  
+  .now-btn:hover {
+      background-color: var(--Primary-color);
+      color: var(--White-color);
+  }
+  
+  
+  .section {
+      width: 90%;
+      margin: 2rem auto 1rem ;
+  }
+  
+  .discription {
+      margin: 1rem 0 2rem ;
+  }
+  
+  .discription h2 {
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 0 0 0.6rem;
+      color: var(--Primary-color);
+  }
+  
+  .discription p {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--Primary-color);
+  }
+  
+  .features h2 {
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 0 0 0.6rem;
+      color: var(--Primary-color);
+  }
+  
+  
+  .features li {
+      margin: 0 0 0.4rem 2rem;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--Primary-color);
+  }
+  
+  .reviews h2 {
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 2rem 0 0.8rem;
+      color: var(--Primary-color);
+  }
+  
+  .reviews p {
+      margin: 0 0 0.4rem 1.2rem;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--Primary-color);
+  }
+  
+
+}

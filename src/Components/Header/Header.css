@@ -1,0 +1,13 @@
+
+
+
+/* 
+=============================================
+            RESPONSIVE MODE
+=============================================
+*/
+@media screen and (max-width: 798px) {
+    .horizontal {
+        display: none;
+    }
+}
