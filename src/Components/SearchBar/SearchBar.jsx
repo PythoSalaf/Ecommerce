@@ -48,19 +48,19 @@ const SearchBar = () => {
               onBlur={handleBlur}
             />
             <div className="search-icon">
-              <BsSearch size={25} color="white" />
+              <BsSearch size={20} color="white" />
             </div>
           </div>
           <div className="icons-container">
             <Link className="login-link">
-              <RxAvatar size={48} color="#082647" />
+              <RxAvatar size={38} color="#082647" />
             </Link>
             <div className="cart-icon" onClick={() => navigate("/cart")}>
-              <BsCart4 size={40} color="#082647" />
+              <BsCart4 size={34} color="#082647" />
               <span className="icon-title">{totalAmount}</span>
             </div>
             <div>
-              <HiOutlineHeart size={35} />
+              <HiOutlineHeart size={34} />
             </div>
           </div>
         </div>
@@ -89,9 +89,13 @@ const SearchBar = () => {
             </Link>
           </div>
           <div className="mobile__icons-container">
-            <BsSearch size={25} color="#082647" onClick={() => setOpenSearch(!openSearch)} />
+            <BsSearch
+              size={23}
+              color="#082647"
+              onClick={() => setOpenSearch(!openSearch)}
+            />
             <div className="cart-icon" onClick={() => navigate("/cart")}>
-              <BsCart4 size={30} color="#082647" />
+              <BsCart4 size={26} color="#082647" />
               <span className="icon-title">{totalAmount}</span>
             </div>
           </div>
@@ -120,7 +124,10 @@ const SearchBar = () => {
                 <Link to={"/products"} onClick={() => setToggle(!toggle)}>
                   Top Products
                 </Link>
-                <Link to={"/deals-of-the-day"} onClick={() => setToggle(!toggle)}>
+                <Link
+                  to={"/deals-of-the-day"}
+                  onClick={() => setToggle(!toggle)}
+                >
                   Today's Deal
                 </Link>
                 <Link to={"/about"} onClick={() => setToggle(!toggle)}>

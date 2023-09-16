@@ -6,7 +6,7 @@
 .address-title {
   text-align: center;
   margin: 1rem 0 2rem;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -24,7 +24,7 @@
   height: 40px;
   padding: 0 0 0 10px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
   border: none;
   outline: none;
@@ -41,7 +41,7 @@
   height: 40px;
   padding: 0 0 0 10px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
   border: none;
   outline: none;
@@ -49,17 +49,17 @@
 }
 
 .checkout-btn {
-    padding: 10px 25px;
-    font-weight: 600;
-    font-size: 18px;
-    text-transform: capitalize;
-    background-color: var(--White-color);
-    color: var(--Primary-color);
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 1rem 0 0;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: capitalize;
+  background-color: var(--White-color);
+  color: var(--Primary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0 0;
+  border: none;
 }
-
 
 /* 
 ==============================================================
@@ -76,18 +76,35 @@
   .address-title {
     font-size: 23px;
   }
-  
 
-.address-name input {
-  font-size: 16px;
-}
-  
-.address-text input {
-  font-size: 16px;
-}
-
-.checkout-btn {
+  .address-name input {
     font-size: 16px;
+  }
+
+  .address-text input {
+    font-size: 16px;
+  }
+
+  .checkout-btn {
+    font-size: 16px;
+  }
 }
 
+@media screen and (max-width: 425px) {
+  .address-title {
+    font-size: 21px;
+  }
+
+  .address-name input {
+    font-size: 14px;
+  }
+
+  .address-text input {
+    font-size: 14px;
+  }
+
+  .checkout-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }

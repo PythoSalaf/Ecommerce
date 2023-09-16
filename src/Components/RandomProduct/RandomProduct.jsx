@@ -5,14 +5,12 @@ import Star from "../Star/Star";
 import "./RandomProduct.css";
 
 const RandomProduct = () => {
- 
   const dispatch = useDispatch();
-  const randomProduct = useSelector( (state) => state.products.randomProducts);
+  const randomProduct = useSelector((state) => state.products.randomProducts);
 
   useEffect(() => {
     dispatch(setRandomProducts());
   }, [dispatch]);
-
 
   return (
     <div className="random-container">
@@ -20,10 +18,12 @@ const RandomProduct = () => {
       <div className="">
         {randomProduct.map(({ id, avatar, name, price }) => (
           <div key={id} className="random-item">
-            <img src={avatar} alt={`avatar-name`} className="random-avatar" />
+            <div className="radom-avatar-container">
+              <img src={avatar} alt={`avatar-name`} className="random-avatar" />
+            </div>
             <div className="random-content">
               <h3 className="random-name">{name}</h3>
-              <Star size={18} />
+              <Star size={16} />
               <h3 className="random-price">#{price}</h3>
             </div>
           </div>

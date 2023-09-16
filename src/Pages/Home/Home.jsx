@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <div className="app__home">
       <BackgroundSlider />
-      <Advert />
       <Native />
       <Feature />
+      {/* <Advert /> */}
       <News />
       <TopCategory />
     </div>

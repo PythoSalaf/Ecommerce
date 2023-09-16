@@ -69,12 +69,9 @@
   transition: all 0.9s ease-in-out;
 }
 
-
 .advert-img:hover {
-  transform: scale3d(1.4,1.2,1);
+  transform: scale3d(1.4, 1.2, 1);
 }
-
-
 
 /* 
 =======================================
@@ -82,28 +79,26 @@
 ========================================
  */
 
- @media screen and (max-width: 789px) {
-    .home__advert-container {
-      flex-direction: column;
-      margin: 0 auto;
-      }
-      .home__advert-data-container {
-        margin: 0.8rem 0;
-      }
-      .advert-content p {
-        font-size: 16px;
-        margin: 0 0 1.5rem;
-      }
-      .advert-content h3 {
-        font-size: 20px;
-        font-weight: 500;
-        text-transform: uppercase;
-      }
-      
-      .advert-img {
-        width: 80%;
-        height: 80%;
-        
-      }
+@media screen and (max-width: 789px) {
+  .home__advert-container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .home__advert-data-container {
+    margin: 0.8rem 0;
+  }
+  .advert-content p {
+    font-size: 16px;
+    margin: 0 0 1.5rem;
+  }
+  .advert-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 
- }
+  .advert-img {
+    width: 80%;
+    height: 80%;
+  }
+}

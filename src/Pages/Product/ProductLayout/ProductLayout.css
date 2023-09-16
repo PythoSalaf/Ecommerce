@@ -1,35 +1,25 @@
 .product-layout-page {
-    width: 100%;
-    background-color: rgb(228, 228, 228);
-  }
+  width: 100%;
+  background-color: rgb(228, 228, 228);
+}
 
-  .product-layout-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 97%;
-    
-  }
-  
-  .product-layout-side-bar {
-    width: 25%;
-  }
-  .product-layout-content {
-    width: 74%;
-    
-  }
+.product-layout-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+}
 
+.product-layout-side-bar {
+  width: 25%;
+}
+.product-layout-content {
+  width: 75%;
+  margin: 0 auto;
+}
 
-
-
-
-
-
-
-
-
-  /* 
+/* 
 =======================================
           RESPONSIVE MODE
 =======================================

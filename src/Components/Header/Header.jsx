@@ -6,9 +6,6 @@ const Header = () => {
     <div>
       <TopBar />
       <SearchBar />
-      <div className="horizontal">
-        <hr />
-      </div>
       <Navbar />
     </div>
   );

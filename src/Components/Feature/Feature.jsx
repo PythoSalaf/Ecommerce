@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ProductCard } from "../../Components";
+import { FeatureCard } from "../../Components";
 import { productItems } from "../../Pages/Product/ProductData";
 import "./Feature.css";
 
@@ -19,10 +19,18 @@ const Feature = () => {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1169,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
       {
@@ -34,7 +42,7 @@ const Feature = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -52,7 +60,7 @@ const Feature = () => {
         <Slider {...settings}>
           {newProduct.map((data) => (
             <div key={data.id} className="feature-container">
-              <ProductCard {...data} />
+              <FeatureCard {...data} />
             </div>
           ))}
         </Slider>

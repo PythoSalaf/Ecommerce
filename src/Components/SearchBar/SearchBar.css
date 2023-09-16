@@ -6,24 +6,21 @@
 
 .normal-search-bar {
   width: 100%;
-  height: 90px;
+  height: 70px;
   background-color: var(--White-color);
-  padding: 0.5rem 0 1.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
   transition: all 0.3s ease-in-out;
-
 }
 .fixed-search-bar {
   width: 100%;
-  height: 95px;
+  height: 85px;
   background-color: var(--White-color);
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0.5rem 0 1.5rem;
   position: fixed;
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -35,11 +32,11 @@
   align-items: center;
   justify-content: space-between;
   width: 98%;
-  margin: 1rem auto;
+  margin: 1rem auto 0;
 }
 
 .search__bar-logo h2 {
-  font-size: 38px;
+  font-size: 32px;
   text-transform: capitalize;
   color: var(--Primary-color);
 }
@@ -51,11 +48,10 @@
 
 .search-box {
   width: 25vw;
-  height: 50px;
-  padding: 8px;
+  height: 43px;
   border: 2px solid var(--Primary-color);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 5px 0 0 5px;
   outline: none;
   transition: width 0.2s ease-in-out;
@@ -64,9 +60,8 @@
 
 .search-box-expand {
   width: 40vw;
-  height: 50px;
-  padding: 8px;
-  font-size: 20px;
+  height: 43px;
+  font-size: 18px;
   font-weight: 500;
   border-radius: 5px 0 0 5px;
   border: 2px solid var(--Primary-color);
@@ -77,8 +72,8 @@
 
 .search-icon {
   background-color: var(--Primary-color);
-  height: 50px;
-  width: 50px;
+  height: 43px;
+  width: 43px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,14 +94,14 @@
 
 .icon-title {
   position: absolute;
-  right: -14px;
-  top: -16px;
+  right: -13px;
+  top: -15px;
   z-index: 10;
   background-color: var(--Primary-color);
   color: var(--White-color);
   border-radius: 50%;
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,7 +121,7 @@
   z-index: 10;
   height: 100vh;
   width: 100vw;
-  transition: all 0.3s ease-in-out ;
+  transition: all 0.3s ease-in-out;
 }
 
 .mobile-menu-container {
@@ -137,8 +132,7 @@
   z-index: 10;
   height: 100vh;
   width: 100vw;
-  transition: all 0.3s ease-in-out ;
-
+  transition: all 0.3s ease-in-out;
 }
 
 .mobile-menu {
@@ -156,7 +150,6 @@
   font-weight: 600;
 }
 
-
 /*
 ============================================
                   MOBILE- DISPLAY
@@ -164,14 +157,13 @@
  */
 
 .normal-mobile-search-bar {
-  margin: 1.5rem 0;
+  margin: 1.2rem 0 1rem;
   width: 100%;
- 
 }
 
 .fixed-mobile-search-bar {
   width: 100%;
-  height: 80px;
+  height: 70px;
   display: flex;
   align-items: center;
   background-color: var(--White-color);
@@ -180,8 +172,6 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 99;
 }
-
-
 
 .search__bar-mobile-container {
   display: flex;
@@ -198,28 +188,25 @@
   width: 70%;
 }
 
-
 .mobile-logo {
-  font-size: 25px;
+  font-size: 24px;
   text-decoration: none;
   color: var(--Primary-color);
   font-weight: 600;
 }
-
 
 .mobile__icons-container {
   display: flex;
   align-items: center;
   gap: 20px;
   width: 26%;
-
 }
 
 .mobile-login-link {
   background-color: var(--White-color);
   padding: 6px 14px;
   border-radius: 5px;
-  color: var(--Primary-color);   
+  color: var(--Primary-color);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -250,49 +237,52 @@
   z-index: 20;
 } */
 
-
-
 /* 
 ============================================
                 RESPONSIVE-MODE
 ============================================
  */
 
-
 @media screen and (min-width: 789px) {
-    .normal-mobile-search-bar {
-        display: none;
-    }
+  .normal-mobile-search-bar {
+    display: none;
+  }
 
-    .fixed-mobile-search-bar {
-        display: none;
-    }
+  .fixed-mobile-search-bar {
+    display: none;
+  }
 
-    .mobile-search {
-      display: none;
-    }
-    
+  .mobile-search {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 789px) {
-  .normal-search-bar, 
-  .fixed-search-bar{
-        display: none;
-    }
+  .normal-search-bar,
+  .fixed-search-bar {
+    display: none;
+  }
 
-    .icon-title {
-      position: absolute;
-      right: -20px;
-      top: -20px;
-      z-index: 10;
-      background-color: var(--Primary-color);
-      color: var(--White-color);
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      font-size: 15px;
-      
-    }
+  .icon-title {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    z-index: 10;
+    background-color: var(--Primary-color);
+    color: var(--White-color);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+}
 
-    
+@media screen and (max-width: 425px) {
+  .icon-title {
+    right: -16px;
+    top: -18px;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+  }
 }

@@ -1,6 +1,6 @@
 .checkout-page {
   width: 100%;
-  margin: 2rem 0 0;
+  margin: 2rem 0 1.5rem;
 }
 
 .checkout-container {
@@ -23,7 +23,7 @@
 }
 
 .checkout-left-title {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
@@ -32,13 +32,13 @@
 }
 
 .checkout-left-text {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   margin: 0 0 2rem;
 }
 
 .checkout-left-text span {
-  font-size: 22px;
+  font-size: 20px;
   text-transform: capitalize;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .checkout-order-title {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
   margin: 1rem 0;
 }
@@ -65,6 +65,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.checkout-order-top h2 {
+  font-size: 20px;
+  margin: 0 0 0.4rem;
 }
 
 .checkout-order-right {
@@ -79,14 +84,14 @@
 }
 
 .checkout-items h4 {
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .checkout-items p {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .checkout-total {
@@ -98,14 +103,14 @@
 }
 
 .checkout-total h4 {
-    font-size: 18px;
-    font-weight: 600;
-  }
+  font-size: 17px;
+  font-weight: 600;
+}
 
-  .checkout-total p {
-    font-size: 18px;
-    font-weight: 600;
-  }
+.checkout-total p {
+  font-size: 16px;
+  font-weight: 600;
+}
 
 .checkout-address {
   width: 70%;
@@ -237,9 +242,13 @@
     width: 95%;
   }
 
-  
-.checkout-left-title {
-    font-size: 20px;
+  .checkout-left {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .checkout-left-title {
+    font-size: 19px;
   }
 
   .checkout-right {
@@ -247,58 +256,56 @@
     margin: 2rem 0 1rem;
   }
 
-
   .checkout-left-text {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 30px;
   }
-  
+
   .checkout-left-text span {
-    font-size: 20px;
+    font-size: 18px;
   }
-  
+
   .checkout-order-container {
     width: 90%;
   }
-  
+
   .checkout-order-title {
-    font-size: 23px;
-  
+    font-size: 20px;
   }
-  
+
   .checkout-order-top {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-.checkout-order-top h2 {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 0.2rem;
-}
 
-.checkout-items h4 {
-    font-size: 18px;
-}
-
-.checkout-items p {
+  .checkout-order-top h2 {
     font-size: 16px;
-}
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+
+  .checkout-items h4 {
+    font-size: 16px;
+  }
+
+  .checkout-items p {
+    font-size: 15px;
+  }
 
   .checkout-order-right {
     width: 100%;
   }
-  
+
   .checkout-items {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1rem 0;
   }
-  
+
   .checkout-total {
     width: 100%;
     display: flex;
@@ -308,17 +315,17 @@
   }
 
   .checkout-total h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .checkout-total p {
-    font-size: 16px;
+    font-size: 15px;
   }
-  
+
   .checkout-address {
     width: 90%;
   }
-  
+
   .checkout-right {
     background-color: var(--White-color);
     flex: 1;
@@ -327,11 +334,11 @@
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
-  
+
   .checkout-right-title {
     font-size: 23px;
   }
-  
+
   .checkout-right-payment {
     width: 100%;
     display: flex;
@@ -341,19 +348,19 @@
   .right-payment-title {
     margin: 0 0 0 0.4rem;
   }
-  
+
   .right-payment-title p {
     font-size: 16px;
   }
-  
+
   .right-payment-icon {
     margin: 0 0.4rem 0 0;
   }
-  
+
   .right-payment-icon img {
     width: 65px;
   }
-  
+
   .checkout-payment-field {
     background-color: #e4e4e4ea;
     padding: 2rem;
@@ -363,31 +370,59 @@
     align-items: center;
     flex-direction: column;
   }
-  
+
   .checkout-payment-field input {
     width: 100%;
     font-size: 16px;
   }
-  
+
   .payment-field {
     width: 100%;
     flex-direction: column;
     gap: 2px;
   }
-  
-  
+
   .checkout-right-bottom img {
     width: 90px;
   }
-  
+
   .right-checkout-btn {
     width: 80%;
     padding: 0.8rem 1rem;
     font-size: 18px;
   }
-  
 }
 
+@media screen and (max-width: 425px) {
+  .checkout-right-title {
+    font-size: 18px;
+  }
 
+  .right-payment-title p {
+    font-size: 14px;
+  }
 
+  .right-payment-icon img {
+    width: 60px;
+  }
 
+  .checkout-payment-field input {
+    font-size: 14px;
+  }
+
+  .checkout-right-bottom img {
+    width: 70px;
+  }
+
+  .right-checkout-btn {
+    width: 60%;
+    padding: 0.8rem;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .checkout-circle {
+    width: 23px;
+    height: 23px;
+  }
+}

@@ -1,15 +1,14 @@
 .info-page {
-    width: 80%;
-    margin: 2rem 0 1rem;
-    background-color: var(--White-color);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 1rem 1.2rem ;
-    border-radius: 10px;
+  width: 80%;
+  margin: 2rem 0 1rem;
+  background-color: var(--White-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem 1.2rem;
+  border-radius: 20px;
 }
 
-
 .info-title {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -23,26 +22,24 @@
   align-items: center;
   gap: 5px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 1rem 0;
   color: var(--Primary-color);
 }
-
-
-
-
-
-
-
 
 /* 
 ====================================================================
                        RESPONSIVE MODE
 ====================================================================
  */
+@media screen and (max-width: 875px) {
+  .info-page {
+    width: 30%;
+  }
+}
 
- @media screen and (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .info-page {
     display: none;
   }

@@ -1,0 +1,80 @@
+.feature-card-container {
+  width: 280px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #e8e8e8;
+}
+
+.feature-link {
+  text-decoration: none;
+}
+
+.featurecard-avatar {
+  width: 190px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.featurecard-avatar img {
+  width: 85%;
+  height: 96%;
+}
+
+.featurecard-content {
+  margin: 1.3rem 0 0;
+}
+
+.card-content-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--Primary-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-content-text {
+  margin: 0.3rem 0;
+  font-size: 14px;
+  color: black;
+  line-height: 20px;
+  text-align: center;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto -10px;
+}
+
+.card-content-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--Primary-color);
+}
+
+.card-content-copies {
+  background-color: var(--Primary-color);
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 14px;
+  color: var(--White-color);
+}
+
+.featurecard-btn-container button {
+  width: 100%;
+  padding: 8px 0;
+  background-color: var(--Primary-color);
+  cursor: pointer;
+  color: var(--White-color);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+}

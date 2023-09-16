@@ -1,7 +1,7 @@
 import React from "react";
 import Data from "./AdvertData";
-import "./Advert.css";
 import { Link } from "react-router-dom";
+import "./Advert.css";
 const Advert = () => {
   return (
     <div className="home__advert">

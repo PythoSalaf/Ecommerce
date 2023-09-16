@@ -1,24 +1,38 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./BackgroundSlider.css";
+import { herobg } from "../../Assets";
 
 const BackgroundSlider = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="hero">
-      <div className="hero-content">
-        <h1>
-          Experience the Latest Tech Marvels at Gadget Hub - Redefining the  <br /> 
-          Way You Interact with Technology!
-        </h1>
-        <p>
-          Revolutionize Your Lifestyle with the Latest Tech Trends - Elevate
-          Your Everyday with our Iconic Gadgets
-        </p>
-      </div>
-      <div className="hero-btn-container">
-      <button className="hero-btn-show" onClick={() => navigate('/products')} >Show more</button>
-      <button className="hero-btn-learn" onClick={() => navigate('/about')} >learn more</button>
+      <div className="hero-container">
+        <div className="hero-left">
+          <h1>
+            Experience the Latest Tech Marvels at Gadget Hub Redefining the Way
+            You Interact with Technology!
+          </h1>
+          <p>
+            Revolutionize Your Lifestyle with the Latest Tech Trends - Elevate
+            Your Everyday with our Iconic Gadgets
+          </p>
+
+          <div className="hero-left-btn-container">
+            <button
+              className="hero-left-btn"
+              onClick={() => navigate("products")}
+            >
+              shop now
+            </button>
+            <button className="hero-left-btn" onClick={() => navigate("about")}>
+              learn more
+            </button>
+          </div>
+        </div>
+        <div className="hero-right">
+          <img src={herobg} alt="" />
+        </div>
       </div>
     </div>
   );
